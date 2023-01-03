@@ -1,13 +1,13 @@
 import requests
 from time import sleep
 from os import environ
-r = requests.get("https://raw.githubusercontent.com/tingirifistik/Enough/main/sms.py").text
+r = requests.get("https://raw.githubusercontent.com/1RETR01/Retr0-s-Enough/main/sms.py").text
 with open("sms.py", "r", encoding="utf-8") as f:
     read = f.read()
 if read == r:
     pass
 else:
-    print("Güncelleme yapılıyor...")
+    print("Updating...")
     with open("sms.py", "w", encoding="utf-8") as f:
         f.write(r)
 from sms import SendSms
@@ -86,10 +86,10 @@ while 1:
                 sleep(1)      
         elif text == "/start" and date not in date_list:
             date_list.append(date)
-            sendMessage("Merhaba!\nBirilerini rahatsız etmek istiyorsan doğru yere geldin.\n'/sms' komutu ile sms göndermeye başlayabilirsin\nİyi eğlenceler!\n\nKaynak kodu:https://github.com/tingirifistik/Enough\nTwitter: @_tingirifistik\n\n ", id)        
+            sendMessage("Hello!\nBirilerini rahatsız etmek istiyorsan doğru yere geldin.\n'/sms' komutu ile sms göndermeye başlayabilirsin\nİyi eğlenceler!\n\nKaynak code:https://github.com/1RETR01/Retr0-s-Enough\nInstagram: @neniill\n\n ", id)        
         elif text != "/sms" and text != "/start" and date not in date_list:
             date_list.append(date)
-            sendMessage("Yazdığınızı anlayamadım.", id)
+            sendMessage("ERROR.", id)
         sleep(1)
     except:
         sleep(1)
