@@ -3,7 +3,7 @@
 <h2>Setup</h2>
 
 ```console
-git clone https://github.com/1RETR01/Retr0-s-Enough
+git clone https://github.com/D3DSEC-RETR0/Retr0-s-Enough
 cd Retr0-s-Enough
 pip3 install -r requirements.txt
 python3 retr0-s-enough.py
