@@ -2,7 +2,7 @@ from colorama import Fore, Style
 from time import sleep
 from os import system
 from requests import get
-r = get("https://raw.githubusercontent.com/D3DSECRETR0/Retr0-s-Enough/main/sms.py").text
+r = get("https://raw.githubusercontent.com/D3DSEC-RETR0/Retr0-s-Enough/main/sms.py").text
 with open("sms.py", "r", encoding="utf-8") as f:
     read = f.read()
 if read == r:
